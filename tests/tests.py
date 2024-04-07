@@ -1,4 +1,5 @@
-from src.masks import mask_account, mask_card, convert_date
+from src.masks import mask_account, mask_card
+from src.widget import convert_date, transform_data
 
 try:
     print(mask_card("7000792289606361"))
@@ -15,3 +16,5 @@ else:
     print("Все успешно! Маска аккаунта выполнена")
 
 print(convert_date("2018-07-11T02:26:18.671407"))
+print(transform_data("Visa Platinum 7000 7922 8960 6361"))
+print(transform_data("Счет 73654108430135874305"))
