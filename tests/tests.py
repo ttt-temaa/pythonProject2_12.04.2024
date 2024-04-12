@@ -1,6 +1,6 @@
 from src.masks import mask_account, mask_card
+from src.processing import filtered_data_canceled, filtered_data_executed, sorted_ascending, sorted_descending
 from src.widget import convert_date, transform_data
-from src.processing import filtered_data_executed, filtered_data_canceled, sorted_descending, sorted_ascending
 
 try:
     print(mask_card("7000792289606361"))
