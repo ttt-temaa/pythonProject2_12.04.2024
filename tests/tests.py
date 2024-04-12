@@ -1,6 +1,6 @@
 from src.masks import mask_account, mask_card
 from src.widget import convert_date, transform_data
-from src.processing import filtered_data_executed, filtered_data_canceled
+from src.processing import filtered_data_executed, filtered_data_canceled, sorted_descending, sorted_ascending
 
 try:
     print(mask_card("7000792289606361"))
@@ -22,3 +22,6 @@ print(transform_data("Счет 73654108430135874305"))
 
 print(filtered_data_executed)
 print(filtered_data_canceled)
+
+print(sorted_descending)
+print(sorted_ascending)
