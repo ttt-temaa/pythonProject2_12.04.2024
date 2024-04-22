@@ -13,7 +13,7 @@ def filter_by_currency(transactions: List[dict], currency: str) -> Iterator[dict
     # Фильтрация транзакций по валюте
     filtered_transactions = (
         transaction for transaction in transactions if transaction["operationAmount"]["currency"]["code"] == currency
-    )
+    ) 
     return filtered_transactions
 
 
