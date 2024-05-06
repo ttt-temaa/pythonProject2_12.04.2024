@@ -1,0 +1,70 @@
+2024-04-24 17:28:00 add_babai ok
+2024-04-24 17:30:52 add_babai ok
+2024-04-24 17:33:24 add_babai ok
+2024-04-24 17:33:24 echo ok
+2024-04-24 17:33:47 add_babai ok
+2024-04-24 17:33:47 echo ok
+2024-04-24 17:35:38 add_babai ok
+2024-04-24 17:35:38 echo ok
+2024-04-24 17:35:38 echo_f error: name 'hello' is not defined. Inputs: (), {}
+2024-04-24 17:37:05 add_babai ok
+2024-04-24 17:37:05 echo ok
+2024-04-24 17:37:05 echo_f error: name 'hello' is not defined. Inputs: (), {}
+2024-04-24 17:38:52 add_babai ok
+2024-04-24 17:39:10 add_babai ok
+2024-04-24 17:39:51 echo ok
+2024-04-24 17:40:02 echo error: can only concatenate str (not "int") to str. Inputs: ('1', 4), {}
+2024-04-24 17:41:26 echo error: can only concatenate str (not "int") to str. Inputs: ('1', 4), {}
+2024-04-24 17:49:48 echo ok
+2024-04-24 17:49:48 echo error: can only concatenate str (not "int") to str. Inputs: ('1', 4), {}
+2024-04-24 17:50:35 echo ok
+2024-04-24 17:50:35 echo error: can only concatenate str (not "int") to str. Inputs: ('1', 4), {}
+2024-04-24 17:57:38 prog ok
+2024-04-24 17:57:38 prog error: can only concatenate str (not "int") to str. Inputs: ('1', 4), {}
+2024-04-24 17:57:38 prog ok
+2024-04-24 17:58:01 prog ok
+2024-04-24 17:58:01 prog error: can only concatenate str (not "int") to str. Inputs: ('1', 4), {}
+2024-04-24 17:58:01 prog ok
+2024-04-24 17:58:33 prog ok
+2024-04-24 17:58:33 prog error: can only concatenate str (not "int") to str. Inputs: ('1', 4), {}
+2024-04-24 17:58:33 prog ok
+2024-04-24 18:00:03 prog ok
+2024-04-24 18:00:03 prog error: can only concatenate str (not "int") to str. Inputs: ('1', 4), {}
+2024-04-24 18:00:03 prog ok
+2024-04-24 18:01:08 prog ok
+2024-04-24 18:01:08 prog error: can only concatenate str (not "int") to str. Inputs: ('1', 4), {}
+2024-04-24 18:01:08 prog ok
+2024-04-24 18:08:43 prog ok
+2024-04-24 18:08:43 prog error: can only concatenate str (not "int") to str. Inputs: ('1', 4), {}
+2024-04-24 18:08:43 prog ok
+2024-04-24 18:08:43 prog ok
+2024-04-25 18:58:45 prog ok
+2024-04-25 18:58:45 prog error: can only concatenate str (not "int") to str. Inputs: ('1', 4), {}
+2024-04-25 18:58:45 prog ok
+2024-04-25 18:58:45 prog ok
+2024-04-25 18:59:28 prog ok
+2024-04-25 18:59:28 prog error: can only concatenate str (not "int") to str. Inputs: ('1', 4), {}
+2024-04-25 18:59:28 prog ok
+2024-04-25 18:59:28 prog error: unsupported operand type(s) for +: 'int' and 'str'. Inputs: (1, '2'), {}
+2024-04-25 19:00:15 prog ok
+2024-04-25 19:00:15 prog error: can only concatenate str (not "int") to str. Inputs: ('1', 4), {}
+2024-04-25 19:00:37 prog ok
+2024-04-25 19:00:37 prog error: can only concatenate str (not "int") to str. Inputs: ('1', 4), {}
+2024-04-25 19:01:35 prog ok
+2024-04-25 19:01:35 prog error: can only concatenate str (not "int") to str. Inputs: ('1', 4), {}
+2024-04-25 19:02:37 prog ok
+2024-04-25 19:02:37 prog error: can only concatenate str (not "int") to str. Inputs: ('1', 4), {}
+2024-04-25 19:03:26 prog ok
+2024-04-25 19:03:26 prog error: can only concatenate str (not "int") to str. Inputs: ('1', 4), {}
+2024-04-25 19:05:10 prog ok
+2024-04-25 19:05:10 prog error: can only concatenate str (not "int") to str. Inputs: ('1', 4), {}
+2024-04-25 19:05:41 prog ok
+2024-04-25 19:05:41 prog error: can only concatenate str (not "int") to str. Inputs: ('1', 4), {}
+2024-04-25 19:07:42 prog ok
+2024-04-25 19:07:42 prog error: can only concatenate str (not "int") to str. Inputs: ('1', 4), {}
+2024-04-25 19:09:27 prog ok
+2024-04-25 19:09:27 prog error: can only concatenate str (not "int") to str. Inputs: ('1', 4), {}
+2024-04-25 19:11:09 prog ok
+2024-04-25 19:11:09 prog error: can only concatenate str (not "int") to str. Inputs: ('1', 4), {}
+2024-04-25 19:11:25 prog ok
+2024-04-25 19:11:25 prog error: can only concatenate str (not "int") to str. Inputs: ('1', 4), {}
