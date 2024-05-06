@@ -1,0 +1,38 @@
+2024-04-24 18:08:35 prog ok
+2024-04-24 18:08:35 prog error: can only concatenate str (not "int") to str. Inputs: ('1', 4), {}
+2024-04-24 18:08:35 prog ok
+2024-04-24 18:08:35 prog ok
+2024-04-24 18:10:03 prog ok
+2024-04-24 18:10:03 prog error: can only concatenate str (not "int") to str. Inputs: ('1', 4), {}
+2024-04-24 18:10:03 prog ok
+2024-04-24 18:10:03 prog ok
+2024-04-24 18:13:34 prog ok
+2024-04-24 18:13:34 prog error: can only concatenate str (not "int") to str. Inputs: ('1', 4), {}
+2024-04-24 18:13:34 prog ok
+2024-04-24 18:13:34 prog ok
+2024-04-25 19:13:31 prog ok
+2024-04-25 19:13:31 prog error: can only concatenate str (not "int") to str. Inputs: ('1', 4), {}
+2024-05-10 13:31:54 prog ok
+2024-05-10 13:31:54 prog error: can only concatenate str (not "int") to str. Inputs: ('1', 4), {}
+2024-05-10 13:32:09 prog ok
+2024-05-10 13:32:09 prog error: can only concatenate str (not "int") to str. Inputs: ('1', 4), {}
+2024-05-10 13:32:53 prog ok
+2024-05-10 13:32:53 prog error: can only concatenate str (not "int") to str. Inputs: ('1', 4), {}
+2024-05-13 09:10:16 prog ok
+2024-05-13 09:10:16 prog error: can only concatenate str (not "int") to str. Inputs: ('1', 4), {}
+2024-05-14 11:42:10 prog ok
+2024-05-14 11:42:10 prog error: can only concatenate str (not "int") to str. Inputs: ('1', 4), {}
+2024-05-14 11:44:09 prog ok
+2024-05-14 11:44:09 prog error: can only concatenate str (not "int") to str. Inputs: ('1', 4), {}
+2024-05-14 11:47:09 prog ok
+2024-05-14 11:47:09 prog error: can only concatenate str (not "int") to str. Inputs: ('1', 4), {}
+2024-05-14 11:48:37 prog ok
+2024-05-14 11:48:37 prog error: can only concatenate str (not "int") to str. Inputs: ('1', 4), {}
+2024-05-14 11:49:24 prog ok
+2024-05-14 11:49:24 prog error: can only concatenate str (not "int") to str. Inputs: ('1', 4), {}
+2024-05-14 11:49:46 prog ok
+2024-05-14 11:49:46 prog error: can only concatenate str (not "int") to str. Inputs: ('1', 4), {}
+2024-05-14 11:50:47 prog ok
+2024-05-14 11:50:47 prog error: can only concatenate str (not "int") to str. Inputs: ('1', 4), {}
+2024-05-14 11:52:03 prog ok
+2024-05-14 11:52:03 prog error: can only concatenate str (not "int") to str. Inputs: ('1', 4), {}
