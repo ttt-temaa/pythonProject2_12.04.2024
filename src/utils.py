@@ -1,11 +1,12 @@
 import json
 import os
-from typing import Any, Dict, List
-from dotenv import load_dotenv
+from typing import Any, Dict
+
 import requests
+from dotenv import load_dotenv
 
 
-def read_operations_file(path: str) -> List[Dict[str, Any]]:
+def read_operations_file(path: str) -> Any:
     """
     Возвращает список словарей с данными о финансовых транзакциях из JSON-файла.
 
@@ -25,10 +26,10 @@ def read_operations_file(path: str) -> List[Dict[str, Any]]:
 
 
 load_dotenv()
-API_KEY = os.getenv('API_KEY')
+API_KEY = os.getenv("API_KEY")
 
 
-def convert_currency(transaction: Dict[str, Any]) -> float:
+def convert_currency(transaction: Dict[str, Any]) -> Any:
     """
     Возвращает сумму транзакции в рублях, конвертируя её из другой валюты при необходимости.
 
