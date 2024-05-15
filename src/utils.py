@@ -5,7 +5,6 @@ from typing import Any, Dict
 import requests
 from dotenv import load_dotenv
 
-
 def read_operations_file(path: str) -> Any:
     """
     Возвращает список словарей с данными о финансовых транзакциях из JSON-файла.
