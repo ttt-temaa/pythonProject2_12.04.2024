@@ -40,3 +40,7 @@
 2024-05-14 12:32:42 prog error: can only concatenate str (not "int") to str. Inputs: ('1', 4), {}
 2024-05-16 16:11:21 prog ok
 2024-05-16 16:11:21 prog error: can only concatenate str (not "int") to str. Inputs: ('1', 4), {}
+2024-05-21 08:46:06 prog ok
+2024-05-21 08:46:06 prog error: can only concatenate str (not "int") to str. Inputs: ('1', 4), {}
+2024-05-21 08:50:05 prog ok
+2024-05-21 08:50:05 prog error: can only concatenate str (not "int") to str. Inputs: ('1', 4), {}
