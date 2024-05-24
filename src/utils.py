@@ -2,9 +2,9 @@ import json
 import os
 from typing import Any, Dict
 
+import pandas as pd
 import requests
 from dotenv import load_dotenv
-import pandas as pd
 
 from src.config_log import get_module_logger
 
@@ -64,7 +64,7 @@ def convert_currency(transaction: Dict[str, Any]) -> Any:
     return amount
 
 
-def unpacking_csv_file(path: str) -> list:
+def unpacking_csv_file(path: str) -> list[Any]:
     """Считываем данные из CSV-файла, пишем логгеры"""
     # Логгер начала выполнения
     log.info("Is decompressing CSV-file for further work, wait, please")
@@ -75,7 +75,7 @@ def unpacking_csv_file(path: str) -> list:
     return json_csv
 
 
-def unpacking_excel_file(path: str) -> list:
+def unpacking_excel_file(path: str) -> list[Any]:
     """Считываем данные из XLSX-файла, пишем логгеры"""
     # Логгер начала выполнения
     log.info("Is decompressing XLSX-file for further work, wait, please")

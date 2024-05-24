@@ -3,10 +3,9 @@ import os.path
 from typing import Any
 from unittest.mock import Mock, patch
 
-from pandas import DataFrame
-
 import pytest
 from dotenv import load_dotenv
+from pandas import DataFrame
 
 from src.utils import convert_currency, read_operations_file, unpacking_csv_file, unpacking_excel_file
 
@@ -62,36 +61,36 @@ API_KEY = os.getenv("API_KEY")
 def test_convert_currency_eur_usd(mock_get: Mock, currency: Any, price: Any) -> None:
     mock_get.return_value.json.return_value = {"conversion_rates": {"RUB": price}}
     assert (
-            convert_currency(
-                {
-                    "id": 441945886,
-                    "state": "EXECUTED",
-                    "date": "2019-08-26T10:50:58.294041",
-                    "operationAmount": {"amount": "31957.58", "currency": {"name": "руб.", "code": currency}},
-                    "description": "Перевод организации",
-                    "from": "Maestro 1596837868705199",
-                    "to": "Счет 64686473678894779589",
-                }
-            )
-            == 31957.58 * price
+        convert_currency(
+            {
+                "id": 441945886,
+                "state": "EXECUTED",
+                "date": "2019-08-26T10:50:58.294041",
+                "operationAmount": {"amount": "31957.58", "currency": {"name": "руб.", "code": currency}},
+                "description": "Перевод организации",
+                "from": "Maestro 1596837868705199",
+                "to": "Счет 64686473678894779589",
+            }
+        )
+        == 31957.58 * price
     )
     mock_get.assert_called_once_with(f"https://v6.exchangerate-api.com/v6/{API_KEY}/latest/{currency}")
 
 
 def test_convert_currency_rub() -> None:
     assert (
-            convert_currency(
-                {
-                    "id": 441945886,
-                    "state": "EXECUTED",
-                    "date": "2019-08-26T10:50:58.294041",
-                    "operationAmount": {"amount": "31957.58", "currency": {"name": "руб.", "code": "RUB"}},
-                    "description": "Перевод организации",
-                    "from": "Maestro 1596837868705199",
-                    "to": "Счет 64686473678894779589",
-                }
-            )
-            == 31957.58
+        convert_currency(
+            {
+                "id": 441945886,
+                "state": "EXECUTED",
+                "date": "2019-08-26T10:50:58.294041",
+                "operationAmount": {"amount": "31957.58", "currency": {"name": "руб.", "code": "RUB"}},
+                "description": "Перевод организации",
+                "from": "Maestro 1596837868705199",
+                "to": "Счет 64686473678894779589",
+            }
+        )
+        == 31957.58
     )
 
 
