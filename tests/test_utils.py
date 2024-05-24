@@ -102,6 +102,6 @@ def test_unpacking_csv_file() -> None:
 
 
 def test_unpacking_excel_file() -> None:
-    with patch("pandas.read_excel") as mock_csv:
-        mock_csv.return_value = DataFrame({"test": ["test"]})
+    with patch("pandas.read_excel") as mock_excel:
+        mock_excel.return_value = DataFrame({"test": ["test"]})
         assert unpacking_excel_file(os.path.join("..", "data", "test.csv")) == [{"test": "test"}]
