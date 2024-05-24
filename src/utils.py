@@ -4,6 +4,7 @@ from typing import Any, Dict
 
 import requests
 from dotenv import load_dotenv
+import pandas as pd
 
 from src.config_log import get_module_logger
 
@@ -61,3 +62,25 @@ def convert_currency(transaction: Dict[str, Any]) -> Any:
         amount = float(transaction["operationAmount"]["amount"])
         log.info("Валюта транзакции другая или неизвестна, возвращаем сумму без изменений")
     return amount
+
+
+def unpacking_csv_file(path: str) -> list:
+    """Считываем данные из CSV-файла, пишем логгеры"""
+    # Логгер начала выполнения
+    log.info("Is decompressing CSV-file for further work, wait, please")
+    csv_file = pd.read_csv(path, encoding="utf-8", sep=";")
+    json_csv = csv_file.to_dict(orient="records")
+    # Логгер начала выполнения
+    log.info("CSV-file unpacked, ready to go")
+    return json_csv
+
+
+def unpacking_excel_file(path: str) -> list:
+    """Считываем данные из XLSX-файла, пишем логгеры"""
+    # Логгер начала выполнения
+    log.info("Is decompressing XLSX-file for further work, wait, please")
+    formating_excel = pd.read_excel(path)
+    json_excel = formating_excel.to_dict(orient="records")
+    # Логгер начала выполнения
+    log.info("XLSX-file unpacked, ready to go")
+    return json_excel
