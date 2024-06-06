@@ -1,15 +1,12 @@
-from datetime import datetime
-
 from src.masks import mask_account, mask_card
 
 
 def convert_date(input_date: str) -> str:
     """Конвертация даты"""
-    input_format = "%Y-%m-%dT%H:%M:%S.%f"
-    output_format = "%d.%m.%Y"
     try:
-        date_obj = datetime.strptime(input_date, input_format)
-        return date_obj.strftime(output_format)
+        date_obj = input_date[8:10] + "." + input_date[5:7] + "." + input_date[:4]
+
+        return date_obj
     except ValueError:
         return "Некорректный формат даты"
 

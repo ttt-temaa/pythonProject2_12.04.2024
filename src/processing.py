@@ -7,7 +7,7 @@ def filter_by_state(data: list, state: str = "EXECUTED") -> list:
     :state: Значение для ключа 'state'. Если не указано, используется 'EXECUTED'.
     :return: Отфильтрованный список словарей.
     """
-    return [item for item in data if item["state"] == state]
+    return [item for item in data if "state" in item and item["state"] == state]
 
 
 input_data = [

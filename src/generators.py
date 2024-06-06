@@ -2,7 +2,7 @@ import itertools
 from typing import Iterator, List
 
 
-def filter_by_currency(transactions: List[dict], currency: str) -> Iterator[dict]:
+def filter_by_currency(transactions: List[dict], currency: str) -> list[dict]:
     """
     Генератор, который фильтрует транзакции по указанной валюте.
 
@@ -11,9 +11,14 @@ def filter_by_currency(transactions: List[dict], currency: str) -> Iterator[dict
     :return: Итератор, который выдает транзакции с заданной валютой.
     """
     # Фильтрация транзакций по валюте
-    filtered_transactions = (
-        transaction for transaction in transactions if transaction["operationAmount"]["currency"]["code"] == currency
-    )
+    filtered_transactions = []
+
+    for transaction in transactions:
+        if "operationAmount" in transaction and transaction["operationAmount"]["currency"]["code"] == currency:
+            filtered_transactions.append(transaction)
+        elif "currency_code" in transaction and transaction["currency_code"] == currency:
+            filtered_transactions.append(transaction)
+
     return filtered_transactions
 
 
